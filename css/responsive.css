@@ -1,133 +1,160 @@
-
-
-/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
-
-
-/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
-
-@media (min-width: 1200px) and (max-width: 1500px) {}
-
+/*--------------------------------------------------------------------- 
+File Name: responsive.scss 
+---------------------------------------------------------------------*/
+/*------------------------------------------------------------------- 
+991px x 768px 
+---------------------------------------------------------------------*/
 @media (min-width: 992px) and (max-width: 1199px) {
-    .text-bg h1 {
-        font-size: 67px;
-    }
-    ul.easy li a {
-        font-size: 21px;
-    }
-    ul.social_icon li a {
-        font-size: 16px;
-    }
+  .text-bg h1 {
+    font-size: 67px;
+  }
+  ul.easy li a {
+    font-size: 21px;
+  }
+  ul.social_icon li a {
+    font-size: 16px;
+  }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
-    .text-bg h1 {
-        padding-top: 0px;
-        font-size: 51px;
-        line-height: 70px;
-    }
-    ul.Menu_footer {
-        padding-bottom: 30px;
-    }
-    ul.easy li a {
-        font-size: 17px;
-        padding: 18px 11px;
-    }
-    ul.location_icon li {
-        padding-bottom: 20px;
-    }
+  .text-bg h1 {
+    padding-top: 0;
+    font-size: 51px;
+    line-height: 70px;
+  }
+  ul.Menu_footer {
+    padding-bottom: 30px;
+  }
+  ul.easy li a {
+    font-size: 17px;
+    padding: 18px 11px;
+  }
+  ul.location_icon li {
+    padding-bottom: 20px;
+  }
 }
-
 @media (min-width: 576px) and (max-width: 767px) {
-    .header {
-        padding: 15px 30px 10px 30px;
-    }
-    .about_img {
-        padding-bottom: 20px;
-    }
-    ul.btn li {
-        padding: 0 18px;
-    }
-    .text-bg {
-        max-width: inherit;
-        padding-top: 60px;
-    }
-    .padding_left0 {
-        padding-left: 15px;
-    }
-    .padding_right0 {
-        padding-right: 15px;
-    }
-    .main_form .send_btn {
-        margin-bottom: 30px;
-    }
-    ul.location_icon li {
-        padding-bottom: 20px;
-    }
-    .work_img {
-        padding-right: 0;
-        padding-top: 30px;
-    }
+  .header {
+    padding: 15px 30px 10px 30px;
+  }
+  .about_img {
+    padding-bottom: 20px;
+  }
+  ul.btn li {
+    padding: 0 18px;
+  }
+  ul.location_icon li {
+    padding-bottom: 20px;
+  }
+  .text-bg {
+    max-width: inherit;
+    padding-top: 60px;
+  }
+  .padding_left0 {
+    padding-left: 15px;
+  }
+  .padding_right0 {
+    padding-right: 15px;
+  }
+  .main_form .send_btn {
+    margin-bottom: 30px;
+  }
+  .work_img {
+    padding-right: 0;
+    padding-top: 30px;
+  }
 }
-
 @media (max-width: 575px) {
-    .header {
-        padding: 30px 0px 15px 0px;
-    }
-    .header::after {
-        background: inherit;
-        position: inherit;
-    }
-    .logo {
-        text-align: center !important;
-        padding-bottom: 6px;
-        text-align: center;
-    }
-    .titlepage h2 {
-        font-size: 37px;
-    }
-    .images_box {
-        padding-top: 20px;
-    }
-    .down_btn a {
-        padding: 7px 16px;
-    }
-    ul.btn li {
-        padding: 0px 7px;
-    }
-    #sidebarCollapse {
-        padding-right: 8px;
-    }
-    .banner_main {
-        padding: 0px 0 90px 0;
-    }
-    .text-bg h1 {
-        font-size: 44px;
-        line-height: 64px;
-        padding-bottom: 40px;
-        padding-left: 10px;
-    }
-    .about_img {
-        padding-bottom: 20px;
-    }
-    .padding_left0 {
-        padding-left: 15px;
-    }
-    .padding_right0 {
-        padding-right: 15px;
-    }
-    .work_img {
-        padding-right: 0;
-        padding-top: 30px;
-    }
-    .main_form .send_btn {
-        margin-bottom: 30px;
-    }
-    ul.location_icon li {
-        padding-bottom: 20px;
-    }
-    ul.Menu_footer,
-    ul.social_icon {
-        padding-bottom: 20px;
-    }
+  .header {
+    padding: 30px 0 15px 0;
+  }
+  .header::after {
+    background: inherit;
+    position: inherit;
+  }
+  .logo {
+    text-align: center !important;
+    padding-bottom: 6px;
+  }
+  .titlepage h2 {
+    font-size: 37px;
+  }
+  .images_box {
+    padding-top: 20px;
+  }
+  .down_btn a {
+    padding: 7px 16px;
+  }
+  ul.btn li {
+    padding: 0 7px;
+  }
+  ul.location_icon li {
+    padding-bottom: 20px;
+  }
+  ul.Menu_footer, ul.social_icon {
+    padding-bottom: 20px;
+  }
+  #sidebarCollapse {
+    padding-right: 8px;
+  }
+  .banner_main {
+    padding: 0 0 90px 0;
+  }
+  .text-bg h1 {
+    font-size: 44px;
+    line-height: 64px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+  }
+  .about_img {
+    padding-bottom: 20px;
+  }
+  .padding_left0 {
+    padding-left: 15px;
+  }
+  .padding_right0 {
+    padding-right: 15px;
+  }
+  .work_img {
+    padding-right: 0;
+    padding-top: 30px;
+  }
+  .main_form .send_btn {
+    margin-bottom: 30px;
+  }
 }
-
+@media screen and (min-width: 320px) {
+  iframe {
+    width: 290px;
+    height: 425px;
+  }
+}
+@media screen and (min-width: 375px) {
+  iframe {
+    width: 345px;
+    height: 425px;
+  }
+}
+@media screen and (min-width: 425px) {
+  iframe {
+    width: 395px;
+    height: 425px;
+  }
+}
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 330px;
+    height: 425px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  iframe {
+    width: 450px;
+    height: 425px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  iframe {
+    width: 540px;
+    height: 425px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
