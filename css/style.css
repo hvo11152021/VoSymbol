@@ -661,6 +661,7 @@ ul.btn li:last-child {
 
 .choose .choose_box {
      background: #fff;
+     height: 393px;
      padding: 35px 35px;
      text-align: center;
 }
@@ -706,6 +707,18 @@ ul.easy li a {
      display: block;
 }
 
+ul.easy li input {
+     text-align: left;
+     border: none;
+     font-size: 27px;
+     padding: 18px 21px;
+     width: 100%;
+     line-height: 36px;
+     margin-bottom: 35px;
+     display: block;
+     background: transparent;
+}
+
 ul.easy li:last-child a {
      margin-bottom: 0;
 }
@@ -715,7 +728,17 @@ ul.easy li.active a {
      color: #fff;
 }
 
+ul.easy li.active input {
+     background: #060505;
+     color: #fff;
+}
+
 ul.easy li a:hover {
+     background: #060505;
+     color: #fff;
+}
+
+ul.easy li input:hover {
      background: #060505;
      color: #fff;
 }
