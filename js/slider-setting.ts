@@ -1,16 +1,23 @@
 /*---------------------------------------------------------------------
-    File Name: slider-setting.js
+	File Name: slider-setting.js
 ---------------------------------------------------------------------*/
 
 "use strict";
-	var tpj = jQuery;
 
-	var revapi486;
-	tpj(document).ready(function () {
-		if (tpj("#rev_slider_486_1").revolution == undefined) {
-			revslider_showDoubleJqueryError("#rev_slider_486_1");
-		} else {
-			revapi486 = tpj("#rev_slider_486_1").show().revolution({
+declare var jQuery: any; // Declare jQuery to avoid "cannot find name" error
+declare function revslider_showDoubleJqueryError(selector: string): void; // Declare the function if not available globally
+
+const tpj: any = jQuery;
+
+let revapi486: any;
+
+tpj(document).ready(() => {
+	if (tpj("#rev_slider_486_1").revolution === undefined) {
+		revslider_showDoubleJqueryError("#rev_slider_486_1");
+	} else {
+		revapi486 = tpj("#rev_slider_486_1")
+			.show()
+			.revolution({
 				sliderType: "standard",
 				jsFileLocation: "revolution/js/",
 				sliderLayout: "fullscreen",
@@ -27,29 +34,29 @@
 						swipe_threshold: 75,
 						swipe_min_touches: 1,
 						swipe_direction: "horizontal",
-						drag_block_vertical: false
+						drag_block_vertical: false,
 					},
 					arrows: {
-						  style: "gyges",
-						  enable: true,
-						  hide_onmobile: false,
-						  hide_onleave: true,
-						  hide_delay: 200,
-						  hide_delay_mobile: 1200,
-						  tmp: '',
-						  left: {
-							  h_align: "left",
-							  v_align: "center",
-							  h_offset: 0,
-							  v_offset: 0
-						  },
-						  right: {
-							  h_align: "right",
-							  v_align: "center",
-							  h_offset: 0,
-							  v_offset: 0
-						  }
-					  },
+						style: "gyges",
+						enable: true,
+						hide_onmobile: false,
+						hide_onleave: true,
+						hide_delay: 200,
+						hide_delay_mobile: 1200,
+						tmp: "",
+						left: {
+							h_align: "left",
+							v_align: "center",
+							h_offset: 0,
+							v_offset: 0,
+						},
+						right: {
+							h_align: "right",
+							v_align: "center",
+							h_offset: 0,
+							v_offset: 0,
+						},
+					},
 					bullets: {
 						enable: true,
 						hide_onmobile: true,
@@ -62,14 +69,14 @@
 						h_offset: 0,
 						v_offset: 30,
 						space: 5,
-						tmp: '<span class="tp-bullet-image"></span><span class="tp-bullet-imageoverlay"></span><span class="tp-bullet-title"></span>'
-					}
+						tmp: '<span class="tp-bullet-image"></span><span class="tp-bullet-imageoverlay"></span><span class="tp-bullet-title"></span>',
+					},
 				},
 				viewPort: {
 					enable: true,
 					outof: "pause",
 					visible_area: "70%",
-					presize: false
+					presize: false,
 				},
 				responsiveLevels: [1240, 1024, 778, 480],
 				visibilityLevels: [1240, 1024, 778, 480],
@@ -80,8 +87,9 @@
 					type: "scroll",
 					origo: "enterpoint",
 					speed: 400,
-					levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 46, 47, 48, 49, 50, 55],
-					type: "scroll",
+					levels: [
+						5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 46, 47, 48, 49, 50, 55,
+					],
 				},
 				shadow: 0,
 				spinner: "off",
@@ -99,7 +107,7 @@
 					simplifyAll: "off",
 					nextSlideOnWindowFocus: "off",
 					disableFocusListener: false,
-				}
+				},
 			});
-		}
-	});
+	}
+});
